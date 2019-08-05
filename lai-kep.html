@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let initial = Number(prompt("initial amount"));
+    let month = parseInt(Number(prompt("months")));
+    let i = Number(prompt("interest rate"));
+    if (initial<0 || month<0 || month>12){
+        alert("error");
+    }else {
+        let fvn = initial * Math.pow((1 + i),(month));
+        let interest = fvn - initial ;
+        alert("lai suat la" +interest);
+    }
+</script>
+</body>
+</html>

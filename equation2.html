@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt("a"));
+    let b = Number(prompt("b"));
+    let c = Number(prompt("c"));
+    console.log(a + "/" + b + "/" + c);
+    if (a == 0) {
+        let x = (-c)/(b);
+        alert(x);
+    } else {
+        let delta = (b * b) - 4 * (a * c);
+        console.log(delta);
+        if (delta < 0){
+            alert("phuong trinh vo nghiem");
+        }
+        else {
+            let squart = Math.sqrt(delta);
+            let x1 = ((-b) + (squart)) / (2 * (a));
+            let x2 = ((-b) - (squart)) / (2 * (a));
+            alert(x1);
+            alert(x2);
+        }
+    }
+</script>
+</body>
+</html>
